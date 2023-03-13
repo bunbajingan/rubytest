@@ -28,7 +28,7 @@ jobs:
         env:
           CHECK_RUNS: ${{ steps.get_failed_check_run.outputs.data }}
         run: echo "$CHECK_RUNS"
-      - uses: ruby/action-slack@v3.0.0
+      - uses: ruby/action-slack@v3.2.1
         with:
           payload: |
             {

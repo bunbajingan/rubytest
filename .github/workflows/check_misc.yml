@@ -98,7 +98,7 @@ jobs:
           GIT_COMMITTER_NAME: git
         if: ${{ github.repository == 'ruby/ruby' && !startsWith(github.event_name, 'pull') && steps.diff.outcome == 'failure' }}
 
-      - uses: ruby/action-slack@v3.0.0
+      - uses: ruby/action-slack@v3.2.1
         with:
           payload: |
             {

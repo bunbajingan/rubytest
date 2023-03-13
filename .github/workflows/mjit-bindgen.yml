@@ -83,7 +83,7 @@ jobs:
       - run: $SETARCH make ${{ matrix.task }}
       - run: git diff --exit-code
         working-directory: src
-      - uses: ruby/action-slack@v3.0.0
+      - uses: ruby/action-slack@v3.2.1
         with:
           payload: |
             {
